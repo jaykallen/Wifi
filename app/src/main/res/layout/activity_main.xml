@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    android:background="@color/colorBackgroundGray"
+    >
+
+    <TextView
+        android:text="Select an Item"
+        android:id="@+id/list_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_below="@id/list_label"
+        android:layout_marginBottom="8dp"
+        />
+
+    <TextView
+        android:text="Detail"
+        android:id="@+id/detail_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_below="@id/recycler_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        />
+
+    <TextView
+        tools:text="SSID: HP-Print-e0-LaserJet 400 color"
+        android:id="@+id/ssid_detail_textview"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_below="@id/detail_label"
+        />
+
+    <TextView
+        tools:text="BSSID: d8:5d:e2:2d:8b:e0"
+        android:id="@+id/bssid_detail_textview"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ssid_detail_textview"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="16dp"
+        />
+
+    <TextView
+        tools:text="Level: -69"
+        android:id="@+id/level_detail_textview"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bssid_detail_textview"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="16dp"
+        />
+
+    <TextView
+        tools:text="Freq: 2462"
+        android:id="@+id/freq_detail_textview"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bssid_detail_textview"
+        android:layout_toRightOf="@+id/level_detail_textview"
+        />
+
+    <TextView
+        tools:text="Timestamp: 958900558000"
+        android:id="@+id/timestamp_detail_textview"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/freq_detail_textview"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="16dp"
+        />
+
+    <TextView
+        tools:text="Capabilities: Wifi"
+        android:id="@+id/capabilities_detail_textview"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timestamp_detail_textview"
+        android:layout_marginLeft="4dp"
+        />
+
+</RelativeLayout>
